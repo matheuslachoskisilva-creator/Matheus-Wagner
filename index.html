@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Sustentável - Agrinho 2026</title>
+    <!-- Link para os ícones do Google (Material Icons) -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e4620, #2d6a4f);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Cabeçalho do Agrinho no Canto Superior Direito */
+        .agrinho-header {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 10px 15px;
+            border-radius: 30px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .agrinho-text {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-right: 8px;
+            letter-spacing: 1px;
+            color: #ebfbeb;
+        }
+
+        .agrinho-icon {
+            color: #52b788;
+            font-size: 28px;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #1b4332;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1b4332;
+            border-bottom: 3px solid #52b788;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        /* Cards de Benefícios */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #f4f9f4;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #2d6a4f;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2d6a4f;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: #40916c;
+        }
+
+        /* Responsividade para celular */
+        @media (max-width: 600px) {
+            body {
+                padding-top: 100px;
+            }
+            .agrinho-header {
+                right: 50%;
+                transform: translateX(50%);
+                top: 15px;
+                width: max-content;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo Agrinho 2026 no canto superior direito -->
+    <header class="agrinho-header">
+        <span class="agrinho-text">Agrinho 2026</span>
+        <span class="material-icons agrinho-icon">eco</span>
+    </header>
+
+    <!-- Conteúdo sobre Agricultura Verde -->
+    <main class="container">
+        <h1>Agricultura Sustentável</h1>
+        <p>
+            A agricultura sustentável foca em produzir alimentos sem esgotar os recursos naturais do planeta ou poluir o meio ambiente. Através de práticas conscientes, ela garante a segurança alimentar das próximas gerações, protege a biodiversidade e valoriza o trabalhador rural.
+        </p>
+
+        <div class="features">
+            <div class="card">
+                <h3>Preservação</h3>
+                <p>Proteção do solo e rotação de culturas de forma inteligente.</p>
+            </div>
+            <div class="card">
+                <h3>Tecnologia Verde</h3>
+                <p>Uso eficiente da água e bioinsumos naturais.</p>
+            </div>
+            <div class="card">
+                <h3>Futuro</h3>
+                <p>Redução da pegada de carbono no campo.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
